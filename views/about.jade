@@ -1,7 +1,27 @@
 extends layout
 
 block content
+  script(src='http://code.jquery.com/jquery-1.9.1.min.js')
+  script(src='/javascripts/countdown.js')
   canvas#canvas
   include partials/header
   
-  img.self(src='http://i61.tinypic.com/2mpcqht.jpg' height='500')
+  section.main
+    div.row
+      div.six.columns
+        .text-main
+          h1 about me
+          p I'm in the midst of becoming a badass full stack developer thanks to 
+            a(href='http://www.galvanize.com/courses/full-stack/' target='“_blank”') Galvanize's 
+            | six month intensive bootcamp.
+          p.days
+
+          h5 random facts:
+          li I use a Mac.
+          li I am a photographer.
+          li I know all 50 states in alphabetical order.
+          li I have two 50lb dogs.
+          li I love being outdoors.
+          
+      div.six.columns
+        img.self(src='http://i61.tinypic.com/2mpcqht.jpg' height='500' alt='superman')  
