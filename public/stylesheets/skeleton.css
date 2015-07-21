@@ -385,7 +385,13 @@ body {
 	background-attachment: fixed;
 }
 
+@import "compass/css3";
+
 @import url(http://fonts.googleapis.com/css?family=PT+Sans+Narrow:700);
+
+* {
+  box-sizing: border-box;
+}
 
 body {
   font-family: "PT Sans Narrow", sans-serif;
