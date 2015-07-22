@@ -31,14 +31,13 @@ var BigBrother = ( function() {
 		},
 
 		draw : function() {
-      // smooth movement of the cam
-        this.angle +=(this.newAngle-this.angle)/15;
+      this.angle +=(this.newAngle-this.angle)/15;
 			ctx.beginPath()
 			// draw horizontal stab
 			ctx.rect(0, 70, 10, 45);
 			this.roundRect(9, 83.75, 10, 17.5, 2);
 			ctx.rect(18.5, 90, 37, 5);
-			// draw joint
+			// draw circle joint
 			ctx.arc(this.translation.x, this.translation.y, 7.5, 0, 2 * Math.PI);
 			ctx.save();
 			// translate to center of the joint
@@ -125,7 +124,7 @@ var BigBrother = ( function() {
 		// distance between mouse and joint of the cam
 		var mag = Math.sqrt(deltaX * deltaX + deltaY * deltaY);
 
-		// only update cam if the mouse is further away as 50
+		// only update cam if the mouse is further away than 50
 		if (mag > 50 && mouse.x > 20) {
       var camPoint = CCTVCam.viewPoint;
 			deltaX = mouse.x - camPoint.x;

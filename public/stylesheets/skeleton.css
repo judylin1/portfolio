@@ -394,60 +394,41 @@ body {
 }
 
 body {
-  font-family: "PT Sans Narrow", sans-serif;
+  font-family: "neosans regular", "Helvetica Neue", Helvetica, Arial, Sans-serif;
 }
 
 nav {
-  background: rgba(233,233,233, 0.8);
   text-align: center;
 }
 
-nav ul {
+nav ul li{
   list-style: none;
 }
 
-nav ul li {
+nav li{
   display: inline-block;
+  padding-right: 10px;
+}
+
+nav li::after{
+  content:'\a0 \a0 \a0 \a0 | \a0 ';
+  font-size: 2em;
+}
+
+nav ul li:last-of-type::after {
+ content: "";
+}
+
+nav ul li a{
   text-transform: uppercase;
-  font-size: 1.5rem;
-  letter-spacing: 0.05rem;
-}
-
-nav ul li a {
-  display: inline-block;
-  padding: 1rem;
-  padding-right: 3em;
-  color: #000;
   text-decoration: none;
-  transition: transform 0.3s ease 0s;
-  transform-origin: 50% 0px 0px;
-  transform-style: preserve-3d;
+  color: black;
+  letter-spacing: 1px;
+  font-size: 2em;
 }
 
-nav ul li a.current {
-  color: #7AB1C1;
-}
-
-nav ul li a:hover {
-  background: rgba(233,233,233, 0.8);
-  color: #000;
-  transform: rotateX(90deg) translateY(-22px);
-}
-
-nav ul li a::before {
-  position: absolute;
-  top: 100%;
-  left: 0px;
-  width: 100%;
-  padding: 4px 0px;
-  text-align: center;
-  line-height: 55px;
-  background: none repeat scroll 0% 0% #7AB1C1;
-  color: #FFF;
-  content: attr(data-hover);
-  transition: #6363CE 0.3s ease 0s;
-  transform: rotateX(-90deg);
-  transform-origin: 50% 0px 0px;
+nav ul li a:hover{
+  color: #888888;
 }
 
 canvas {
@@ -464,13 +445,18 @@ a {
 .self {
 	float: right;
 	margin-right: 10%;
-	margin-top: 10%;
+	margin-top: 16%;
+}
+
+.pano {
+  padding-top: 5em;
+  width: 100%;
 }
 
 h1 {
   margin-bottom: 0.1em;
   font-size: 48px;
-  font-size: 4.8rem;
+  font-size: 3rem;
   line-height: 1.2em;
   font-family: "neosans regular", "Helvetica Neue", Helvetica, Arial, Sans-serif;
   letter-spacing: -0.07em;
@@ -479,7 +465,7 @@ h1 {
 section.main {
   overflow: hidden;
   border-top: #FFF solid 1px;
-  padding: 3em 1.5em;
+  padding: 0.5em 1.5em;
 }
 
 .row {
@@ -489,6 +475,90 @@ section.main {
 }
 
 .text-main {
-	padding-top: 1.5em;
+	padding-top: 3em;
   padding-left: 2.5em;
+}
+
+.text-contact {
+	padding-top: 0em;
+  padding-left: 2.5em;
+}
+
+.click {
+   transition:all .25s ease-in-out;
+   -moz-transition:all .25s ease-in-out;
+   -webkit-transition:all .25s ease-in-out;
+
+  float:left;
+  height:30px;
+  width:30px;
+  margin-left:15px;
+  opacity:.5;
+}
+
+.click:hover {
+   transition:all .25s ease-in-out;
+   -moz-transition:all .25s ease-in-out;
+   -webkit-transition:all .25s ease-in-out;
+  opacity:1;
+
+  margin-top:-10px;
+  -webkit-box-shadow:  0px 3px 10px 2px rgba(0, 0, 0, .5);
+  box-shadow:  0px 3px 6px 1px rgba(0, 0, 0, .5);
+}
+
+.click img {
+  margin-top:-10px;
+  margin-left:-10px;
+}
+
+.right {
+  margin-left: 5em;
+  margin-top: 2em;
+}
+
+.scoot {
+  margin-left: 1em;
+}
+
+/*PROJECTS*/
+.proj {
+position:relative;
+overflow:hidden;
+background: #d2d2d2;
+width:200px;
+height:150px;
+border-radius:5px;
+}
+
+.proj .textbox {
+width:200px;
+height:150px;
+position:absolute;
+top:0;
+left:0;
+margin-top:-160px;
+border-radius:5px;
+background-color: rgba(0,0,0,0.75);
+}
+
+.proj:hover .textbox {
+margin-top:0;
+}
+
+.text {
+padding-top: 90px;
+color: #fff;
+font-family:Tahoma, Geneva, sans-serif;
+font-size:12px;
+text-align: center;
+}
+
+a {
+text-decoration: none;
+}
+
+.textbox {
+-webkit-transition: all 0.7s ease;
+transition: all 0.7s ease;
 }
