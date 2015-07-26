@@ -381,7 +381,7 @@ there.
 body {
 	background-image: url('http://s13.postimg.org/x3fgcv4sn/watermark.png');
 	background-repeat: no-repeat;
-	background-position: center 100px;
+	background-position: center;
 	background-attachment: fixed;
   font-family: "neosans regular", "Helvetica Neue", Helvetica, Arial, Sans-serif;
 }
@@ -410,6 +410,7 @@ h1 {
   line-height: 1.2em;
   font-family: "neosans regular", "Helvetica Neue", Helvetica, Arial, Sans-serif;
   letter-spacing: -0.07em;
+  color: #181818;
 }
 
 .row {
