@@ -1,5 +1,24 @@
 extends layout
 
 block content
+  script(src='http://code.jquery.com/jquery-1.9.1.min.js')
+  script(src='/javascripts/countdown.js')
   canvas#canvas
   include partials/header
+  
+  section.main
+    div.row
+      div.six.columns
+        .text-main
+          h1 hello
+          p I enjoy long walks on the beach during the sunset. My soulmate
+          p Wait, this isn't OKCupid. My bad. 
+          p Let's start over. 
+          p My name is Judy and I'm currently in the midst of becoming a badass developer thanks to 
+            a(href='http://www.galvanize.com/courses/full-stack/' target='“_blank”') Galvanize's 
+            | six month full stack bootcamp in Denver. I'll be actively pursuing a jr dev position in the next month so if you like what you see (code-wise) feel free to contact me.
+          p.days
+          p PS - I don't want us to start off on the wrong foot so let me just clarify: I am not Superman. I just borrowed his shirt.
+            
+      div.six.columns
+        img.self(src='http://i61.tinypic.com/2mpcqht.jpg' height='500' alt='superman')  

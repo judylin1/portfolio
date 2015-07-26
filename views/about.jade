@@ -1,8 +1,6 @@
 extends layout
 
 block content
-  script(src='http://code.jquery.com/jquery-1.9.1.min.js')
-  script(src='/javascripts/countdown.js')
   canvas#canvas
   include partials/header
   
@@ -11,11 +9,18 @@ block content
       div.six.columns
         .text-main
           h1 about me
-          p I'm in the midst of becoming a badass full stack developer thanks to 
-            a(href='http://www.galvanize.com/courses/full-stack/' target='“_blank”') Galvanize's 
-            | six month intensive bootcamp.
-          p.days
-
+          h5 Coding skillz:
+          li JavaScript
+          li HTML / Canvas
+          li CSS / SASS / Skeleton
+          li Ruby / Rails
+          li Java
+          li C
+          li Node.JS
+          li Express / Jade / EJS
+          li Mongo / Mongoose
+          li AJAX / JSON / APIs
+          
           h5 random facts:
           li I have a Bachelor's in Math.
           li I am a photographer.
@@ -24,4 +29,6 @@ block content
           li I love being outdoors.
           
       div.six.columns
-        img.self(src='http://i61.tinypic.com/2mpcqht.jpg' height='500' alt='superman')  
+        .hoverimg
+          img(src='images/dog_front.jpeg' height="500" alt="dogfront")
+          img(src='images/dog_back.jpeg' width='400' alt="dogback")

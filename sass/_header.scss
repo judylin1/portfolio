@@ -1,0 +1,33 @@
+nav {
+  text-align: center;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  padding-right: 10px;
+}
+
+nav li::after {
+  content:'\a0 \a0 \a0 \a0 | \a0 ';
+  font-size: 2em;
+}
+
+nav ul li:last-of-type::after {
+ content: "";
+}
+
+nav ul li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  letter-spacing: 1px;
+  font-size: 2em;
+}
+
+nav ul li a:hover {
+  color: #888888;
+}

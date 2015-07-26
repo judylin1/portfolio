@@ -1,0 +1,44 @@
+section.main {
+  overflow: hidden;
+  border-top: #FFF solid 1px;
+  padding: 0.5em 1.5em;
+}
+
+.text-main {
+	padding-top: 4em;
+  padding-left: 2.5em;
+  font-size: 16px;
+  font-weight: 460;
+}
+
+.hoverimg {
+	float: right;
+	margin-right: 10%;
+	margin-top: 16%;
+  border: 2px solid #666;
+  background-color: #FFFFFF;
+}
+
+.hoverimg img:last-child {
+  display:none
+}
+
+.hoverimg:hover img:first-child {
+  display:none
+}
+
+.hoverimg:hover img:last-child {
+  display:inline-block
+}
+
+.hoverimg img {
+  margin-bottom: -0.15em;
+}
+
+.text-main h5 {
+  margin-bottom: 0em;
+}
+
+.text-main li {
+  margin-bottom: 0.2em;
+}
