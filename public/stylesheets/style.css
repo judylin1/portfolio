@@ -417,10 +417,12 @@ there.
 /* Larger than desktop */
 /* Larger than Desktop HD */
 body {
-  background-image: url("http://s13.postimg.org/x3fgcv4sn/watermark.png");
+  background-image: url("http://s4.postimg.org/oehjuz425/watermark_1.png");
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
+  width: 100%;
+  height: 100%;
   font-family: "neosans regular", "Helvetica Neue", Helvetica, Arial, Sans-serif; }
 
 * {
@@ -893,7 +895,6 @@ a {
 
 section.main {
   overflow: hidden;
-  border-top: #FFF solid 1px;
   padding: 0.5em 1.5em; }
 
 .text-main {
@@ -929,7 +930,6 @@ section.main {
 
 section.main {
   overflow: hidden;
-  border-top: #FFF solid 1px;
   padding: 0.5em 1.5em; }
 
 .text-contact {
