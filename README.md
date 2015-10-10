@@ -1,6 +1,5 @@
 # Portfolio
-[judylin.ninja](http://judylin.ninja/)  
-How sweet is this domain name? Pretty sweet.
+Old version.
 
 This site is powered by:
 - Node
