@@ -1,5 +1,4 @@
 $(function() {
-
   var now = new Date();
 
   var currentDate = Date.now(),
