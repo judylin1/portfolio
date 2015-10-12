@@ -1,6 +1,5 @@
 $(function() {
   var now = new Date();
-
   var currentDate = Date.now(),
       endDate = new Date((now.getFullYear()) + '/10/30');
 
