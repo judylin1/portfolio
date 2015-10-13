@@ -5,8 +5,7 @@
 .container {
   margin-top: 50px; }
 
-.column,
-.columns {
+.column, .columns {
   width: 100%;
   float: left;
   box-sizing: border-box; }
